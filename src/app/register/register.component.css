@@ -14,24 +14,25 @@ a {
   text-decoration: none;
 }
 
-.login {
+.register{
   text-align: left;
   margin: auto;
 }
 
-.login ul li input[type=email],
-.login ul li input[type=password] {
+.register ul li input[type=text],
+.register ul li input[type=password],
+.register ul li input[type=email] {
   font-size: 16px;
   margin: auto;
 }
 
-.login ul li input {
+.register ul li input {
   width: 275px;
   height: 40px;
   margin-top: 20px;
 }
 
-.login ul li input[type=submit] {
+.register ul li input[type=submit] {
   width: 285px;
   height: 40px;
 }
