@@ -1,0 +1,29 @@
+<div class="annonce">
+  <table class="annonce">
+    <thead>
+    <td>ID</td>
+    <td>ANNE_EXPIRATION</td>
+    <td>CONTENU</td>
+    <td>CRYPTOGRAMME</td>
+    <td>DATE_HEURE_CREATION</td>
+    <td>DATE_HEURE_DEBUT</td>
+    <td>DATE_HEURE_FIN</td>
+    <td>MOIS_EXPIRATION</td>
+    <td>MONTANT_REGLE_EN_EUROS</td>
+    <td>NUMERO_CARTE</td>
+    <td>CLIENT_ID</td>
+    </thead>
+    <tr *ngFor="let annonce of annonces">
+      <td>{{ annonce.id }}</td>
+      <td>{{ annonce.anne_expiration }}</td>
+      <td>{{ annonce.contenu }}</td>
+      <td>{{ annonce.date_heure_creation }}</td>
+      <td>{{ annonce.date_heure_debut }}</td>
+      <td>{{ annonce.date_heure_fin }}</td>
+      <td>{{ annonce.mois_expiration }}</td>
+      <td>{{ annonce.montant_regle_en_euros }}</td>
+      <td>{{ annonce.numero_carte }}</td>
+      <td>{{ annonce.client_id }}</td>
+    </tr>
+  </table>
+</div>

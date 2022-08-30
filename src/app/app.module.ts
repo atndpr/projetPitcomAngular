@@ -7,15 +7,13 @@ import { RegisterComponent } from './register/register.component';
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { HttpClientModule } from "@angular/common/http";
 import { UserComponent } from './user/user.component';
-import { AnnonceComponent } from './annonce/annonce.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     RegisterComponent,
-    UserComponent,
-    AnnonceComponent
+    UserComponent
   ],
   imports: [
     BrowserModule,
