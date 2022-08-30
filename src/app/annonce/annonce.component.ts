@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./annonce.component.css']
 })
 export class AnnonceComponent implements OnInit {
+  //annonces: Annonce[]|undefined;
 
   constructor() { }
 
