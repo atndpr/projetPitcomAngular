@@ -24,5 +24,4 @@ export class RegisterComponent implements OnInit {
     const { firstName, lastName, email, password} = this.registForm.value
     const registParams = { firstName, lastName, email, password}
   }
-
 }

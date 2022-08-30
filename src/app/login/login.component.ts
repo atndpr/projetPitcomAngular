@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from "@angular/forms"
 import { LoginService } from './login.service'
 import {Router} from "@angular/router";
+
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -14,8 +15,10 @@ export class LoginComponent implements OnInit {
 
   ngOnInit(): void {
     this.loginForm = new FormGroup({
-      username: new FormControl('', Validators.pattern('/^[a-z0-9._%+-]+@orsys.fr$/')),
-      password: new FormControl('', Validators.pattern('/^[0-9]{2,8}$/'))
+      username: new FormControl('client1@orsys.fr', Validators.pattern('/^[a-z0-9._%+-]+@orsys.fr$/')),
+      //
+      password: new FormControl('12345678', Validators.pattern('/^[0-9]{2,8}$/'))
+      //
     })
   }
 
@@ -24,11 +27,7 @@ export class LoginComponent implements OnInit {
     const loginParams = {
       username, password
     }
-    if(this.loginForm.valid){
-      this.loginService.login(loginParams).subscribe(res => {
-        this.router.navigate(['http://localhost:8080/api/'])})
-    }else {
-      alert("email ou mot de passe n'est pas valide")
-    }
+    this.router.navigate(['/annonce']);
+
   }
 }
