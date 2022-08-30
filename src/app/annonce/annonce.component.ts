@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Annonce} from "./annonce";
 
 @Component({
   selector: 'app-annonce',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./annonce.component.css']
 })
 export class AnnonceComponent implements OnInit {
-  //annonces: Annonce[]|undefined;
+  annonces: Annonce[]|undefined;
 
   constructor() { }
 
